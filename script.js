@@ -1,3 +1,34 @@
+//burger-menu
+const sticks = document.querySelector('#contain');
+sticks.addEventListener('click', function (e) {
+  e.preventDefault();
+  const modal = document.querySelector('.burger__nav');
+
+  modal.classList.toggle('block');
+  const nav_items = document.querySelector('#nav');
+  nav_items.classList.toggle('open');
+  sticks.classList.toggle('change');
+
+  window.onclick = function(event) {
+    if (event.target === modal) {
+      modal.classList.toggle('block');
+      nav_items.classList.toggle('open');
+      sticks.classList.toggle('change');
+    }
+  }
+});
+
+const burger_links = document.querySelectorAll('.burger__nav__link');
+burger_links.forEach(function(link) {
+  link.addEventListener('click', function() {
+    const modal = document.querySelector('.burger__nav');
+    modal.classList.toggle('block');
+    const nav_items = document.querySelector('#nav');
+    nav_items.classList.toggle('open');
+    sticks.classList.toggle('change');
+  });
+});
+
 //==============================================================================
 const anchors = document.querySelectorAll('a[href*="#"]');
 //smooth transition to clicking on the menu
@@ -20,13 +51,11 @@ window.addEventListener('scroll', function() {
   scrollTop = window.scrollY;
   anchors.forEach(function(anchor) {
     const blockID = anchor.getAttribute('href').substr(1);
-    if(blockID!=''){
-      if(scrollTop >= document.querySelector('[id='+blockID+']').offsetTop) {
-        anchors.forEach(function(anch) {
-          anch.classList.remove('redcolor');
-        });
-        anchor.classList.add('redcolor');
-      }
+    if(scrollTop >= document.querySelector('[id='+blockID+']').offsetTop && blockID !== '') {
+      anchors.forEach(function(anch) {
+        anch.classList.remove('redcolor');
+      });
+      anchor.classList.add('redcolor');
     }
   });
 });
@@ -35,17 +64,17 @@ window.addEventListener('scroll', function() {
 var multiItemSlider = (function () {
   return function (selector, config) {
     var
-      _mainElement = document.querySelector(selector), 
-      _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), 
-      _sliderItems = _mainElement.querySelectorAll('.slider__item'), 
+      _mainElement = document.querySelector(selector),
+      _sliderWrapper = _mainElement.querySelector('.slider__wrapper'),
+      _sliderItems = _mainElement.querySelectorAll('.slider__item'),
       _sliderBtns = _mainElement.querySelectorAll('.slider__btn'),
-      _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), 
-      _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width),    
+      _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width),
+      _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width),
       _positionLeftItem = 0,
-      _transform = 0, 
-      _step = _itemWidth / _wrapperWidth * 100, 
+      _transform = 0,
+      _step = _itemWidth / _wrapperWidth * 100,
       _items = [];
-    
+
     _sliderItems.forEach(function (item, index) {
       _items.push({ item: item, position: index, transform: 0 });
     });
@@ -94,13 +123,13 @@ var multiItemSlider = (function () {
           nextItem = position.getItemMax();
           _items[nextItem].position = position.getMin() - 1;
           _items[nextItem].transform -= _items.length * 100;
-          _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';  
+          _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
         }
         _transform += _step;
       }
-      _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';  
+      _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
     }
-        
+
     var _btnClick = function (e) {
       if (e.target.classList.contains('slider__btn')) {
         e.preventDefault();
@@ -113,7 +142,7 @@ var multiItemSlider = (function () {
         item.addEventListener('click', _btnClick);
       });
     }
-        
+
     _setUpListeners();
     return {
       right: function () {
@@ -167,7 +196,7 @@ button_portfolio.onclick = function(event) {
 };
 //==============================================================================
 //==============================================================================
-//slider
+//slider1
 var multiItemSlider = (function () {
   return function (selector, config) {
     var
@@ -263,7 +292,7 @@ var multiItemSlider = (function () {
 }());
 var slider = multiItemSlider('.slider1');
 //==============================================================================
-//slider
+//slider2
 var multiItemSlider = (function () {
   return function (selector, config) {
     var
@@ -359,7 +388,7 @@ var multiItemSlider = (function () {
 }());
 var slider = multiItemSlider('.slider2');
 //==============================================================================
-//slider
+//slider3
 var multiItemSlider = (function () {
   return function (selector, config) {
     var

@@ -12,13 +12,33 @@
     
     <header class="header">
       <div class="container header__container">
+
+				<nav class="burger-menu" id="myburger">
+          <div class="burger__content">
+            <div id="contain">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <div class="burger__nav">
+              <ul id="nav">
+                <li><a href="#hero" class="burger__nav__link">Герои</a></li>
+                <li><a href="#skill" class="burger__nav__link">Навыки</a></li>
+                <li><a href="#food" class="burger__nav__link">Все началось с пельменей</a></li>
+                <li><a href="#repair" class="burger__nav__link">Ремонт</a></li>
+                <li><a href="#relax" class="burger__nav__link">Дни отдыха</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
         <div class="logo">
           <h1 class="logo__text">Блог о неделе в общаге<span class="logo__symbol">*</span></h1>
         </div>
         <nav class="nav__container">
           <ul class="nav">
-		    <li class="nav__item"><a href="#hero" class="nav__link redcolor">Герои</a></li>
-            <li class="nav__item"><a href="#skill" class="nav__link">Навыки</a></li>			
+            <li class="nav__item"><a href="#hero" class="nav__link redcolor">Герои</a></li>
+            <li class="nav__item"><a href="#skill" class="nav__link">Навыки</a></li>      
             <li class="nav__item"><a href="#food" class="nav__link">Все началось с пельменей</a></li>
             <li class="nav__item"><a href="#repair" class="nav__link">Ремонт</a></li>
             <li class="nav__item"><a href="#relax" class="nav__link">Дни отдыха</a></li>
@@ -28,11 +48,11 @@
       <div class="header__line line"></div>
     </header> 
 
-	<a class="anchor" id="hero"></a>
+    <a class="anchor" id="hero"></a>
     <section class="about">
       <div class="container about__container">
         <h2>Этих героев должны знать все</h2>
-        <p>Общажные дети, во многом разные, но это не мешает им иногда хорошо проводить время вместе</p>  
+        <p class="about2">Общажные дети, во многом разные, но это не мешает им иногда хорошо проводить время вместе</p>  
         <div class="about_items__container">
           <div class="about_item">
             <img src="assets/images/pasha.jpg" class="about_item__image grayboxshadow">
@@ -91,25 +111,25 @@
         <div class="slider__wrapper" id="slider__wrapper">
           <div class="slider__item">
             <div>
-							<h2 class="name">Навык</h2>
+              <h2 class="name">Навык</h2>
               <p class="about1">Получаем знания в области программирования. Помогаем Марку делать си и слушаем его скрытые аудио.</p>
               <img src="assets/photo/1.jpg" class="photo1 redboxshadow1">
             </div>
           </div>
-					<div class="slider__item">
+          <div class="slider__item">
             <div>
-							<h2 class="name">Навык</h2>
+              <h2 class="name">Навык</h2>
               <p class="about1">Учимся добывать пищу. На фото Марк расставляет ловушку для голубя в виде дорожки из гречки.</p>
               <img src="assets/photo/2.jpg" class="photo1 redboxshadow1">
             </div>
           </div>
-					<div class="slider__item">
-						<h2 class="name">Навык</h2>
+          <div class="slider__item">
+            <h2 class="name">Навык</h2>
             <p class="about1">Выживание в общаге. Марк пытается словить голубя, которого приманил на гречку. Спойлер: у него не вышло.</p>
-						<video class="redboxshadow1"  height="500" controls="controls" preload>
-							<source src="assets/video/ловим_голубя.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						</video>
-					</div>
+            <video class="redboxshadow1"  height="500" controls="controls" preload>
+              <source src="assets/video/ловим_голубя.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+          </div>
         </div>
 
         <button class="slider__btn slider__btn_left" ></button>
@@ -119,7 +139,7 @@
       <div class="slider__line line" id="slider__line"></div>
     </section>
  
-		<a class="anchor" id="portfolio"></a>
+    <a class="anchor" id="portfolio"></a>
     <section class="portfolio">
       <div class="container portfolio__container">
         <h2>Просто картиночки, чтоб передохнуть от текста</h2>
@@ -150,73 +170,73 @@
       <div class="portfolio__line line"></div>
     </section>
 
-		<a class="anchor" id="food"></a>
+    <a class="anchor" id="food"></a>
     <section class="slider1" id="sldr1">
       <div class="container slider__container1">
 
         <div class="slider__wrapper1" id="slider__wrapper1">
-					<div class="slider__item1">
+          <div class="slider__item1">
             <div>
-							<h2 class="name">Пельмени сближают</h2>
+              <h2 class="name">Пельмени сближают</h2>
               <p class="about1">Ужин при свече</p>
               <img src="assets/photo/6.jpg" class="photo2 redboxshadow1">
             </div>
           </div>
-					<div class="slider__item1">
-						<h2 class="name">Вот так Марк просит у соседей соль</h2>
-						<p class="about1">А у вас соли не будет?</p>
-						<video class="redboxshadow1" height="500" controls="controls" preload>
-							<source src="assets/video/у_вас_соли.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						</video>
-					</div>
-					<div class="slider__item1">
-						<h2 class="name">Кража казенного имущества</h2>
-						<p class="about1">Галя готовится к смерти (часть 1), там должна быть песня гробовщиков, но что-то пошло не так.</p>
-						<video class="redboxshadow1" height="500" controls="controls" preload>
-							<source src="assets/video/матрас_1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						</video>
-					</div>
-					<div class="slider__item1">
-						<h2 class="name">Кража казенного имущества</h2>
-						<p class="about1">Галя готовится к смерти (часть 2), шум на весь коридор, но, на удивление, никто не вышел.</p>
-						<video class="redboxshadow1" height="500" controls="controls" preload>
-							<source src="assets/video/матрас_2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						</video>
-					</div>
-					<div class="slider__item1">
-						<h2 class="name">Кража казенного имущества</h2>
-						<p class="about1">Галя готовится к смерти (часть 3), Галю уронили и Марк демонстрирует свою мощь.</p>
-						<video class="redboxshadow1" height="500" controls="controls" preload>
-							<source src="assets/video/матрас_3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						</video>
-					</div>
-					<div class="slider__item1">
-							<h2 class="name">Вот до чего доводят выходы в окно</h2>
+          <div class="slider__item1">
+            <h2 class="name">Вот так Марк просит у соседей соль</h2>
+            <p class="about1">А у вас соли не будет?</p>
+            <video class="redboxshadow1" height="500" controls="controls" preload>
+              <source src="assets/video/у_вас_соли.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+          </div>
+          <div class="slider__item1">
+            <h2 class="name">Кража казенного имущества</h2>
+            <p class="about1">Галя готовится к смерти (часть 1), там должна быть песня гробовщиков, но что-то пошло не так.</p>
+            <video class="redboxshadow1" height="500" controls="controls" preload>
+              <source src="assets/video/матрас_1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+          </div>
+          <div class="slider__item1">
+            <h2 class="name">Кража казенного имущества</h2>
+            <p class="about1">Галя готовится к смерти (часть 2), шум на весь коридор, но, на удивление, никто не вышел.</p>
+            <video class="redboxshadow1" height="500" controls="controls" preload>
+              <source src="assets/video/матрас_2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+          </div>
+          <div class="slider__item1">
+            <h2 class="name">Кража казенного имущества</h2>
+            <p class="about1">Галя готовится к смерти (часть 3), Галю уронили и Марк демонстрирует свою мощь.</p>
+            <video class="redboxshadow1" height="500" controls="controls" preload>
+              <source src="assets/video/матрас_3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+          </div>
+          <div class="slider__item1">
+              <h2 class="name">Вот до чего доводят выходы в окно</h2>
               <p class="about1">После пельменей выпили пива и вышли в окно, Марк упал со скейта, содрал кожу с мясом, зрелище не для слабонервных, поэтому видео прилагается. Как я докатился до такой жизни? Очень просто.</p>
               <video class="redboxshadow1" height="500" controls="controls" preload>
-								<source src="assets/video/как_я_докатился.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-							</video>
-					</div>
-					<div class="slider__item1">
-						<h2 class="name">Вот до чего доводят выходы в окно</h2>
-						<p class="about1">Новый влог Марка. Попытка прокатиться номер 2, на этот раз удачная. Я не вижу ни одной причины продолжать.</p>
-						<video class="redboxshadow1"  height="500" controls="controls" preload>
-							<source src="assets/video/мой_новый_влог.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						</video>
-					</div>
-					<div class="slider__item1">
-						<h2 class="name">Танец двух душ</h2>
+                <source src="assets/video/как_я_докатился.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+              </video>
+          </div>
+          <div class="slider__item1">
+            <h2 class="name">Вот до чего доводят выходы в окно</h2>
+            <p class="about1">Новый влог Марка. Попытка прокатиться номер 2, на этот раз удачная. Я не вижу ни одной причины продолжать.</p>
+            <video class="redboxshadow1"  height="500" controls="controls" preload>
+              <source src="assets/video/мой_новый_влог.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+          </div>
+          <div class="slider__item1">
+            <h2 class="name">Танец двух душ</h2>
             <p class="about1">По пути к приемному покою Артем и Максим решили станцевать вальс. До этого они обменялись рубашками, видимо мы чего-то не знаем про их взаимоотношения.</p>
-						<video class="redboxshadow1" height="500" controls="controls" preload>
-							<source src="assets/video/мальчики_танцуют_вальс.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						</video>
-					</div>
-					<div class="slider__item1">
-						<div>
-							<h2 class="name">Возвращение домой</h2>
-							<p class="about1">Погуляли и больше нет сил идти в общагу, отдыхаем на качелях и слушаем о том, что вселенная создана Пашей. Вопрос: почему он не сделал общагу получше?</p>
-							<img src="assets/photo/5.jpg" class="photo2 redboxshadow1">
-						</div>
+            <video class="redboxshadow1" height="500" controls="controls" preload>
+              <source src="assets/video/мальчики_танцуют_вальс.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+          </div>
+          <div class="slider__item1">
+            <div>
+              <h2 class="name">Возвращение домой</h2>
+              <p class="about1">Погуляли и больше нет сил идти в общагу, отдыхаем на качелях и слушаем о том, что вселенная создана Пашей. Вопрос: почему он не сделал общагу получше?</p>
+              <img src="assets/photo/5.jpg" class="photo2 redboxshadow1">
+            </div>
           </div>
         </div>
 
@@ -226,34 +246,34 @@
       </div>
       <div class="slider__line line" id="slider__line"></div>
     </section>
-
-		<a class="anchor" id="repair"></a>
+    
+    <a class="anchor" id="repair"></a>
     <section class="slider2" id="sldr">
       <div class="container slider__container2">
 
         <div class="slider__wrapper2" id="slider__wrapper2">
-					<div class="slider__item2">
-						<h2 class="name gray">Школа ремонта</h2>
+          <div class="slider__item2">
+            <h2 class="name gray">Школа ремонта</h2>
             <p class="about1 gray">Данное видео доказывает, что для ремонта не нужен шпатель и кисточки. Кисточку замечательно заменяет веник, а шпатель баночка пива.</p>
-						<video class="grayboxshadow"  height="500" controls="controls" preload>
-							<source src="assets/video/школа_ремонта.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						</video>
-					</div>
+            <video class="grayboxshadow"  height="500" controls="controls" preload>
+              <source src="assets/video/школа_ремонта.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+          </div>
           <div class="slider__item2">
             <div>
-							<h2 class="name gray">Работы на день</h2>
+              <h2 class="name gray">Работы на день</h2>
               <p class="about1 gray">Когда вам говорят, что ремонт можно сделать за день, даже не сомневайтесь. Спустя полдня работы одна стена почти готова.</p>
               <img src="assets/photo/7.jpg" class="photo2 grayboxshadow">
             </div>
           </div>
-					<div class="slider__item2">
+          <div class="slider__item2">
             <div>
-							<h2 class="name gray">Устали и спят</h2>
+              <h2 class="name gray">Устали и спят</h2>
               <p class="about1 gray">Ремонт дело тяжелое, особенно, когда вместо кисточки веник и вместо шпателя банка пива.</p>
               <img src="assets/photo/8.jpg" class="photo1 grayboxshadow">
             </div>
           </div>
-					
+          
         </div>
 
         <button class="slider__btn2 slider__btn_left2" ></button>
@@ -263,61 +283,61 @@
       <div class="about__line1 line"></div>
     </section>
     
-		<a class="anchor" id="relax"></a>
+    <a class="anchor" id="relax"></a>
     <section class="slider3" id="sldr">
       <div class="container slider__container3">
 
         <div class="slider__wrapper3" id="slider__wrapper3">
-					<div class="slider__item3">
-						<h2 class="name gray">Марк режет себя</h2>
-            <p class="about1 gray">Сбрасывает кожу, как змея, а потом и Галя отрезает кусочек его мяса. Это все происходит под видео о том, как бороться с депрессулькой.</p>
-						<video class="grayboxshadow" height="500" controls="controls" preload>
-							<source src="assets/video/режем_марка.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						</video>
-					</div>
           <div class="slider__item3">
-						<h2 class="name gray">Концерт</h2>
+            <h2 class="name gray">Марк режет себя</h2>
+            <p class="about1 gray">Сбрасывает кожу, как змея, а потом и Галя отрезает кусочек его мяса. Это все происходит под видео о том, как бороться с депрессулькой.</p>
+            <video class="grayboxshadow" height="500" controls="controls" preload>
+              <source src="assets/video/режем_марка.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+          </div>
+          <div class="slider__item3">
+            <h2 class="name gray">Концерт</h2>
             <p class="about1 gray">Первая локация. Просто вступление, посмотреть концерт и проникнуться атмосферой.</p>
-						<video class="grayboxshadow" height="500" controls="controls" preload>
-							<source src="assets/video/концерт.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						</video>
-					</div>
-					<div class="slider__item3">
-						<h2 class="name gray">Собака и мужчина с волынкой</h2>
+            <video class="grayboxshadow" height="500" controls="controls" preload>
+              <source src="assets/video/концерт.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+          </div>
+          <div class="slider__item3">
+            <h2 class="name gray">Собака и мужчина с волынкой</h2>
             <p class="about1 gray">Вторая локация. Найти собаку возле мужчины с волынкой, дать мужчине денег на продолжение его доброго дела(обеспечение досуга странникам), покормить и напоить собаку. Страннику были выплачены златые, собака была успешно найдена и накормлена, но вот задание с тем, чтобы напоить ее было провалено, за что герои получают метку осуждения от ворчливых женщин.</p>
-						<video class="grayboxshadow" height="500" controls="controls" preload>
-							<source src="assets/video/кормим_собаку.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						</video>
-					</div>
-					<div class="slider__item3">
-						<h2 class="name gray">Чаша мира</h2>
+            <video class="grayboxshadow" height="500" controls="controls" preload>
+              <source src="assets/video/кормим_собаку.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+          </div>
+          <div class="slider__item3">
+            <h2 class="name gray">Чаша мира</h2>
             <p class="about1 gray">Третья локация. Найти заведение с самым вкусным напитком, открыть новые умения, воспользоваться ими, поговорить с хозяином таверны и получить от него подарок.</p>
-						<video class="grayboxshadow" height="500" controls="controls" preload>
-							<source src="assets/video/марк_играет2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						</video>
-					</div>
-					<div class="slider__item3">
+            <video class="grayboxshadow" height="500" controls="controls" preload>
+              <source src="assets/video/марк_играет2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+          </div>
+          <div class="slider__item3">
             <div>
-							<h2 class="name gray">Мисочки</h2>
+              <h2 class="name gray">Мисочки</h2>
               <p class="about1 gray">Заключение. Последний квест был выполнен успешно и герои получили посуду, сделанную лесными эльфами из горного хрусталя и разрисованную лучшими придворными мастерами графа Румянцева.</p>
               <img src="assets/photo/9.jpg" class="photo2 grayboxshadow">
             </div>
           </div>
-					<div class="slider__item3">
+          <div class="slider__item3">
             <div>
-							<h2 class="name gray">Мой отец ушел, когда мне было только 5 месяцев.</h2>
+              <h2 class="name gray">Мой отец ушел, когда мне было только 5 месяцев.</h2>
               <p class="about1 gray">Отец Павел ушел за хлебом и не вернулся. Пришлось кушать макароны, пока он кушал водку. Не самый лучший пример ребенку.</p>
               <img src="assets/photo/10.jpg" class="photo1 grayboxshadow">
             </div>
           </div>
-					<div class="slider__item3">
+          <div class="slider__item3">
             <div>
-							<h2 class="name gray">Новое увлечение</h2>
+              <h2 class="name gray">Новое увлечение</h2>
               <p class="about1 gray">Папа Марк решил отвлечь ребенка от ухода отца из семьи просмотром сериала и мороженым. Это помогло.</p>
               <img src="assets/photo/11.jpg" class="photo1 grayboxshadow">
             </div>
           </div>
-					
+          
         </div>
 
         <button class="slider__btn3 slider__btn_left3" ></button>
