@@ -28,7 +28,61 @@ burger_links.forEach(function(link) {
     sticks.classList.toggle('change');
   });
 });
+//==============================================================================
+//переход в полноэкранный режим и наоборот
+document.querySelector('.expansion__img11').addEventListener('click', function(e){
+  document.querySelector('.expansion__img11').classList.toggle('expansion');
+});
+document.querySelector('.expansion__img12').addEventListener('click', function(e){
+  document.querySelector('.expansion__img12').classList.toggle('expansion');
+});
+document.querySelector('.expansion__img13').addEventListener('click', function(e){
+  document.querySelector('.expansion__img13').classList.toggle('expansion');
+});
 
+const expansion__img = document.querySelector('.expansion__img');
+expansion__img.onclick = function(event) {
+  const img = event.target;
+  if (img.tagName !== 'IMG') {
+    return;
+  }
+  img.classList.toggle('expansion');
+  document.querySelector('.slider__btn_left').classList.toggle('hide');
+  document.querySelector('.slider__btn_right').classList.toggle('hide');
+};
+
+const expansion__img1 = document.querySelector('.expansion__img1');
+expansion__img1.onclick = function(event) {
+  const img = event.target;
+  if (img.tagName !== 'IMG') {
+    return;
+  }
+  img.classList.toggle('expansion');
+  document.querySelector('.slider__btn_left1').classList.toggle('hide');
+  document.querySelector('.slider__btn_right1').classList.toggle('hide');
+};
+
+const expansion__img2 = document.querySelector('.expansion__img2');
+expansion__img2.onclick = function(event) {
+  const img = event.target;
+  if (img.tagName !== 'IMG') {
+    return;
+  }
+  img.classList.toggle('expansion');
+  document.querySelector('.slider__btn_left2').classList.toggle('hide');
+  document.querySelector('.slider__btn_right2').classList.toggle('hide');
+};
+
+const expansion__img3 = document.querySelector('.expansion__img3');
+expansion__img3.onclick = function(event) {
+  const img = event.target;
+  if (img.tagName !== 'IMG') {
+    return;
+  }
+  img.classList.toggle('expansion');
+  document.querySelector('.slider__btn_left3').classList.toggle('hide');
+  document.querySelector('.slider__btn_right3').classList.toggle('hide');
+};
 //==============================================================================
 const anchors = document.querySelectorAll('a[href*="#"]');
 //smooth transition to clicking on the menu
