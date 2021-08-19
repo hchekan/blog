@@ -1,6 +1,5 @@
 //burger-menu
 const sticks = document.querySelector('#contain');
-const body = document.querySelector('#body');
 sticks.addEventListener('click', function (e) {
   e.preventDefault();
   const modal = document.querySelector('.burger__nav');
@@ -9,14 +8,12 @@ sticks.addEventListener('click', function (e) {
   const nav_items = document.querySelector('#nav');
   nav_items.classList.toggle('open');
   sticks.classList.toggle('change');
-  body.classList.toggle('overflow');
 
   window.onclick = function(event) {
     if (event.target === modal) {
       modal.classList.toggle('block');
       nav_items.classList.toggle('open');
       sticks.classList.toggle('change');
-      body.classList.toggle('overflow');
     }
   };
 });
