@@ -23,7 +23,9 @@
 html{
   overflow-x: hidden;
 }
-
+.overflow{
+  position: fixed;
+}
 .header {
   background-color: rgb(45, 48, 58);
   display: block;
@@ -61,6 +63,7 @@ html{
   background-color: rgba(0,0,0,0.4); 
   animation-name: fadeIn;
   animation-duration: 0.4s;
+  overflow: hidden;
 }
 #nav {
   display: none;
